@@ -77,8 +77,8 @@ jobs:
 
       - name: Tag Docker Image
         run: |
-          docker tag diabetes-prediction ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-prediction:latest
+          docker tag diabetes-prediction ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-prediction:0.0.1
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-prediction:latest
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-prediction:0.0.1
