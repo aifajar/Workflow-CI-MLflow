@@ -1,0 +1,39 @@
+artifact_path: file:///home/runner/work/Workflow-CI-MLflow/Workflow-CI-MLflow/mlruns/0/models/m-242b19c3d852407bb8c7707f9a26c627/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+is_signature_from_type_hint: false
+mlflow_version: 3.1.0
+model_id: m-242b19c3d852407bb8c7707f9a26c627
+model_size_bytes: 56667173
+model_uuid: m-242b19c3d852407bb8c7707f9a26c627
+prompts: null
+run_id: 596990de23e9460287dc371849e919f3
+signature:
+  inputs: '[{"type": "double", "name": "age", "required": true}, {"type": "long",
+    "name": "hypertension", "required": true}, {"type": "long", "name": "heart_disease",
+    "required": true}, {"type": "double", "name": "bmi", "required": true}, {"type":
+    "double", "name": "HbA1c_level", "required": true}, {"type": "double", "name":
+    "blood_glucose_level", "required": true}, {"type": "boolean", "name": "gender_Female",
+    "required": true}, {"type": "boolean", "name": "gender_Male", "required": true},
+    {"type": "boolean", "name": "gender_Other", "required": true}, {"type": "boolean",
+    "name": "smoking_history_No Info", "required": true}, {"type": "boolean", "name":
+    "smoking_history_current", "required": true}, {"type": "boolean", "name": "smoking_history_ever",
+    "required": true}, {"type": "boolean", "name": "smoking_history_former", "required":
+    true}, {"type": "boolean", "name": "smoking_history_never", "required": true},
+    {"type": "boolean", "name": "smoking_history_not current", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-25 04:07:26.455129'

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-MLflow/Workflow-CI-MLflow/mlruns/0/596990de23e9460287dc371849e919f3/artifacts
+end_time: 1750824459715
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 596990de23e9460287dc371849e919f3
+run_name: omniscient-colt-605
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750824439657
+status: 3
+tags: []
+user_id: runner
