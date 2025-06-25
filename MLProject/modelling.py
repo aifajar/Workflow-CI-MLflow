@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import mlflow
 import mlflow.sklearn
 from joblib import dump
-import dotenv
+#import dotenv
 import os
 
 df = pd.read_csv("diabetes_prediction_dataset_preprocessing.csv")
@@ -17,11 +17,11 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-dotenv.load_dotenv()
+#dotenv.load_dotenv()
 
-mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
-os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
-os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
+# mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+# os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
+# os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
 
 with mlflow.start_run(run_name="Diabetes Prediction - Random Forest Default using GitHub Actions"):
     mlflow.autolog()

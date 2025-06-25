@@ -8,12 +8,12 @@ on:
 env:
   CSV_URL: "MLProject/diabetes_prediction_dataset_preprocessing.csv"
   TARGET_VAR: "Diabetes_Prediction"
-  MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
-  MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
-  MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
+  #MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+  #MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
+  #MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
 
 jobs:
-  build:
+  mlflow-pipelines:
     runs-on: ubuntu-latest
 
     steps:
