@@ -8,9 +8,6 @@ on:
 env:
   CSV_URL: "MLProject/diabetes_prediction_dataset_preprocessing.csv"
   TARGET_VAR: "Diabetes_Prediction"
-  #MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
-  #MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
-  #MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
 
 jobs:
   mlflow-pipelines:
@@ -77,8 +74,8 @@ jobs:
 
       - name: Tag Docker Image
         run: |
-          docker tag diabetes-prediction ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-prediction:0.0.1
+          docker tag diabetes-prediction ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-prediction:0.0.2
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-prediction:0.0.1
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-prediction:0.0.2
