@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-MLflow/Workflow-CI-MLflow/mlruns/0/6742add7b3b34f9e84535d8653f1045b/artifacts
+end_time: 1750836906816
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6742add7b3b34f9e84535d8653f1045b
+run_name: orderly-stag-608
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750836889711
+status: 3
+tags: []
+user_id: runner
