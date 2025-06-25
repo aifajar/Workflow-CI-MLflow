@@ -1,4 +1,4 @@
-name: workflow-ml
+name: diabetes-prediction
 
 conda_env: conda.yaml
 
@@ -6,4 +6,4 @@ entry_points:
   main:
     parameters:
       data_path: {type: str, default: "diabetes_prediction_dataset_preprocessing.csv"}
-    command: "python modeling.py"
+    command: "python modelling.py"
