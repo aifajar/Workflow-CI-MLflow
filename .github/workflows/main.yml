@@ -51,8 +51,8 @@ jobs:
           git add mlruns/ || true
           git commit -m "Save mlruns from CI run"
           git push origin main
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.USER_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.USER_TOKEN }}
 
       - name: Build Docker Model
         run: |
