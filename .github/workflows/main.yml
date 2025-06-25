@@ -49,10 +49,10 @@ jobs:
           git config --local user.email "${{ secrets.USER_EMAIL }}"
           git config --local user.name "Ahmad Ibnu Fajar"
           git add mlruns/ || true
-          git commit -m "Add new model artifact (auto)" || echo "No changes to commit"
+          git commit -m "Save mlruns from CI run"
           git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.USER_TOKEN }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.USER_TOKEN }}
 
       - name: Build Docker Model
         run: |
