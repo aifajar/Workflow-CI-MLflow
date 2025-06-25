@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-MLflow/Workflow-CI-MLflow/mlruns/0/b68cb5a73fd14155a85930fea5b9c76c/artifacts
+end_time: 1750823576866
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b68cb5a73fd14155a85930fea5b9c76c
+run_name: bald-koi-527
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750823559319
+status: 3
+tags: []
+user_id: runner
