@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI-MLflow/Workflow-CI-MLflow/mlruns/0/c045c9b261f04a4db39c1f645050767e/artifacts
+end_time: 1750822724851
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c045c9b261f04a4db39c1f645050767e
+run_name: handsome-shad-642
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750822706748
+status: 3
+tags: []
+user_id: runner
